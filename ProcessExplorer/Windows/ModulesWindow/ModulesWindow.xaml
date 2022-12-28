@@ -1,0 +1,20 @@
+﻿<Window x:Class="ProcessExplorer.Windows.ModulesWindow.ModulesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:ProcessExplorer"
+        mc:Ignorable="d"
+        Title="ModulesWindow" Height="250" Width="800"
+        WindowStartupLocation="CenterOwner"
+        WindowState="Normal"
+        WindowStyle="ToolWindow"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}">
+    
+    <Grid>
+        <ScrollViewer>
+            <TextBlock ScrollViewer.VerticalScrollBarVisibility="Auto"
+                       Text="{Binding Message}"/>
+        </ScrollViewer>
+    </Grid>
+</Window>
